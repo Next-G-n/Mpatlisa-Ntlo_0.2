@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_to_mpatlisa_ntlo"
+                    android:id="@+id/welcome_login"
+                    android:textSize="65sp"
+                    android:gravity="center"
+                    android:textColor="#4698EA"/>
+            <EditText
+                android:id="@+id/Register_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/welcome"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button4"
+                android:paddingStart="20dp"
+                android:hint="@string/user_name"
+                android:textColor="@drawable/edit_text"
+                android:textColorHint="#4698EA"
+                android:textSize="17sp"
+                tools:ignore="RtlSymmetry" />
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Register_email_input"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Register_name_input"
+                android:hint="@string/email"
+                android:textSize="17sp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button4"
+                android:textColorHint="#4698EA"
+                tools:ignore="RtlSymmetry,TextFields" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="75dp"
+                    android:id="@+id/Register_phone_number_input2"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Register_email_input"
+                    android:hint="@string/cell_number"
+                    android:text="@string/_267"
+                    android:textSize="20sp"
+                    android:paddingStart="20dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textview"
+                    android:textColor="#4698EA"
+                    tools:ignore="RtlSymmetry,TextFields" />
+                <EditText
+                    android:layout_width="280dp"
+                    android:id="@+id/Register_phone_number_input"
+                    android:layout_height="40dp"
+                    android:textSize="17sp"
+                    android:paddingStart="20dp"
+                    android:hint="@string/enter_phone_number"
+                    android:textColorHint="#4698EA"
+                    android:inputType="phone"
+                    android:layout_marginStart="-32dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textview2"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Register_Password_input"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Register_phone_number_input"
+                android:textSize="17sp"
+                android:paddingStart="20dp"
+                android:hint="@string/password"
+                android:textColorHint="#4698EA"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button4"
+                tools:ignore="RtlSymmetry" />
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Register_Confirm_Password_input"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Register_Password_input"
+                android:textSize="17sp"
+                android:paddingStart="20dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:textColorHint="#4698EA"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button4"
+                tools:ignore="RtlSymmetry" />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_of_user"
+                android:background="@drawable/button4"
+                android:layout_below="@+id/Register_Confirm_Password_input"
+                android:layout_marginStart="50dp"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/landlord"
+                    android:text="@string/landlord"
+                    android:textSize="23sp"
+                    android:textColor="#4698EA"
+                    android:buttonTint="#4698EA"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tenant"
+                    android:text="@string/tenant"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="23sp"
+                    android:textColor="#4698EA"
+                    android:buttonTint="#4698EA"
+                    />
+            </RadioGroup>
+                <Button
+                android:layout_width="95dp"
+                android:id="@+id/Register_button"
+                android:layout_height="45dp"
+                android:layout_below="@+id/type_of_user"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_arrow4"
+                android:paddingStart="33dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button3"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/progressbar" android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

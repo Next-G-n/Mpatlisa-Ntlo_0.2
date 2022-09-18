@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#4698EA"
+    >
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutwelcome"
+        >
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:id="@+id/welcome"
+        android:paddingStart="30dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:text="to"
+            android:id="@+id/to"
+            android:paddingStart="30dp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mpatlisa ntlo"
+            android:layout_below="@+id/to"
+            android:id="@+id/mpatlisa"
+            android:paddingStart="30dp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/layoutwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:id="@+id/layoutinput"
+        >
+
+        <EditText
+
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/Login_email_input"
+            android:layout_height="50dp"
+            android:hint="@string/email2"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttons"
+            android:textColorHint="#85C1E9"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/Login_Password_input"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:hint="@string/password2"
+            android:inputType="textPassword"
+            android:textColorHint="#85C1E9"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttons"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/layoutinput">
+
+        <Button
+        android:layout_width="350dp"
+        android:gravity="center"
+            android:layout_marginTop="20dp"
+        android:id="@+id/Login_button"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutinput"
+        android:text="@string/submit"
+        android:textSize="40sp"
+        android:background="@drawable/button2"
+        android:textColor="#4698EA" />
+        <TextView
+            android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_password"
+            android:textSize="25sp"
+        android:text="@string/forgot_password"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+         />
+        <View
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Create_Account"
+            android:textColor="@android:color/white"
+            android:id="@+id/Create_Account"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/back"
+        android:layout_centerInParent="true"
+        android:background="#99000000">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progress="300"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_wait"
+            android:gravity="center"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/Please_wait" />
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

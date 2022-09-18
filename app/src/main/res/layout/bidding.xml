@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/button4"
+    android:elevation="15dp"
+    android:layout_gravity="center"
+    android:padding="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/close_btn"
+            android:gravity="center"
+            android:text="X"
+            android:textStyle="bold"
+            android:textColor="#F46056"
+            android:background="@drawable/circler_back"
+            android:layout_gravity="end"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/give_a_better_offer"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enter_bid"
+            android:background="@drawable/button2"
+            android:hint="Enter your bid"
+            android:textColor="@color/lightBlue"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_bid"
+            android:text="Place a Bid"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"
+            tools:ignore="TextViewEdits" />
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Original Price"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_margin="1dp"
+                    app:contentPadding="2dp"
+                    app:cardBackgroundColor="@android:color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/avatarIv33"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/ic_user_icon"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/nameTV33"
+                                android:layout_toRightOf="@+id/avatarIv"
+                                android:text="@string/user_name"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/timeTV33"
+                                android:layout_below="@+id/commentTv"
+                                android:layout_toEndOf="@+id/avatarIv"
+                                android:text="@string/date"
+                                android:textColor="@android:color/black"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:id="@+id/uBid33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round2"
+                            android:padding="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/bwp_10_000"/>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top bids"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_Bids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

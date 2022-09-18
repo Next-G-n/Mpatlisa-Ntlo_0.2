@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "151229546329",
+    "firebase_url": "https://mpatlisa-ntlo.firebaseio.com",
+    "project_id": "mpatlisa-ntlo",
+    "storage_bucket": "mpatlisa-ntlo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151229546329:android:e8a91d2a4baed4137f9648",
+        "android_client_info": {
+          "package_name": "com.example.mpatlisantlo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151229546329-02fnjli9sk227ljehddv1jfgp5cc0ap3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mpatlisantlo",
+            "certificate_hash": "96a32fc4ec283c371a8f01cde646016a1324d061"
+          }
+        },
+        {
+          "client_id": "151229546329-pgs01pvf7pa2aedsip3cpsk2r0f9m9ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTrKmQRFS06-EgjyOos2ZfizCigBHdcIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151229546329-pgs01pvf7pa2aedsip3cpsk2r0f9m9ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

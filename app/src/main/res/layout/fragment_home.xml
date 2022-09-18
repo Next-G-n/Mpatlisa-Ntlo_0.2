@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+    <include android:id="@+id/prefer" android:visibility="gone" layout="@layout/prefference"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="5dp"
+                android:id="@+id/switchView">
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switchButton"
+                    android:textOff="Sell"
+                    android:textOn="Rent"
+                    android:thumb="@drawable/sw_thumb"
+                    app:track="@drawable/sw_track"
+                    android:textStyle="bold"
+                    app:showText="true"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutDisplay1"
+                android:layout_below="@+id/switchView"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textLastpost"
+                    android:text="Latest Post"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/black"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button4"
+                    android:padding="20dp"
+                    android:layout_below="@+id/textLastpost"
+                    android:isScrollContainer="false"
+                    android:id="@+id/postRecycleView"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutDisplay2"
+                android:elevation="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/LayoutDisplay1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended for you"
+                    android:elevation="100dp"
+                    android:textSize="25sp"
+                    android:background="@drawable/addview"
+                    android:textColor="@android:color/black"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/addview"
+                    android:padding="20dp"
+                    android:isScrollContainer="false"
+                    android:id="@+id/postRecycleView2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutDisplay4"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/LayoutDisplay2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/black"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/postRecycleView4"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>

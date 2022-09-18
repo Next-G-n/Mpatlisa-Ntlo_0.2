@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/SignOut_button"
+        android:title="@string/log_out"
+        android:icon="@drawable/ic_logout"/>
+
+    <item android:id="@+id/user_avt"
+    android:icon="@drawable/ic_user_profile_foreground"
+    android:title="@string/user_name" />
+    <item
+        android:id="@+id/chat"
+        android:title="@string/chat"
+        android:icon="@drawable/ic_chat"/>
+
+
+</menu>

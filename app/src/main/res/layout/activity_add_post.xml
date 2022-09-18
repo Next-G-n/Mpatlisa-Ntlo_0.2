@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity">
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:layout_below="@+id/navigationView_topBack">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="15dp"
+        android:background="@drawable/linebor"
+        android:layout_gravity="center"
+        android:id="@+id/layoutinputAdd"
+
+        android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pImageIv"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/inlinebords"
+                android:minHeight="200dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plocation2"
+            android:background="@drawable/inlinebords"
+            android:padding="18dp"
+            android:hint="@string/location"
+            android:layout_margin="10dp"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pTitleEt"
+            android:padding="18dp"
+            android:hint="Plot Number"
+            android:background="@drawable/inlinebords"
+            android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:padding="18dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/region"
+                android:background="@drawable/inlinebords"
+                android:id="@+id/pRegion"/>
+            <EditText
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:padding="18dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/region"
+                android:layout_marginStart="25dp"
+                android:hint="@string/price"
+                android:inputType="number"
+                android:background="@drawable/inlinebords"
+                android:id="@+id/price"/>
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pDescriptionET"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:hint="@string/enter_description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:background="@drawable/inlinebords"
+            android:gravity="start"
+            android:layout_marginBottom="30dp"
+            android:minHeight="120dp"/>
+
+
+
+
+    </LinearLayout>
+        <Button
+        android:id="@+id/pUpload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+            android:layout_marginStart="30dp"
+        android:background="@drawable/round4"
+            android:layout_marginTop="-20dp"
+            android:layout_below="@+id/layoutinputAdd"
+        android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutinputAdd"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round4">
+                <TextView
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_for"/>
+
+                <Spinner
+                    android:id="@+id/Type_of_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:id="@+id/navigationView_topBack"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="50dp"
+        app:menu="@menu/menuback" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_post"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="43dp"
+            android:layout_gravity="end"
+            android:id="@+id/user_Icon3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_profile_foreground"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

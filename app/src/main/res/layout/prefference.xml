@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/completeDetails"
+    android:background="@drawable/button4"
+    android:elevation="15dp"
+    android:layout_gravity="center"
+    android:padding="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/close_btn2"
+            android:gravity="center"
+            android:text="X"
+            android:textStyle="bold"
+            android:textColor="#F46056"
+            android:background="@drawable/circler_back"
+            android:layout_gravity="end"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please complete your details "
+                        android:textStyle="bold"
+                        android:textSize="23dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/enterPhoneNumber"
+                        android:background="@drawable/button2"
+                        android:hint="Enter your Phone number"
+                        android:textColor="@color/lightBlue"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:layout_marginBottom="12dp"
+                        android:padding="12dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        app:contentPadding="2dp"
+                        app:cardBackgroundColor="@android:color/white">
+
+                        <LinearLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/type_of_user"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Register_Confirm_Password_input"
+                                android:layout_marginStart="4dp"
+                                android:background="@drawable/button4">
+
+                                <RadioButton
+                                    android:id="@+id/landlord"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginStart="20dp"
+                                    android:buttonTint="#4698EA"
+                                    android:text="@string/landlord"
+                                    android:textColor="#4698EA"
+                                    android:textSize="23sp" />
+
+                                <RadioButton
+                                    android:id="@+id/Tenant"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginStart="20dp"
+                                    android:buttonTint="#4698EA"
+                                    android:text="@string/tenant"
+                                    android:textColor="#4698EA"
+                                    android:textSize="23sp" />
+                            </RadioGroup>
+
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="70dp"
+                            android:padding="12dp">
+                            <Button
+                                android:id="@+id/sumbit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button3"
+                                android:inputType="number"
+                                android:text="continue"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                tools:ignore="TextViewEdits" />
+
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomizeActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/LayoutCustomize1"
+                >
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/below_this_prices"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/budget_price"
+                    android:inputType="number"
+                    android:id="@+id/Prefer_Price"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/LayoutCustomize2"
+                android:layout_below="@+id/LayoutCustomize1"
+                tools:ignore="UnknownIdInLayout"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_preferred_location"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/eg_francistown"
+                    android:id="@+id/Prefer_Location"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/LayoutCustomize3"
+                android:layout_below="@+id/LayoutCustomize2"
+                tools:ignore="UnknownIdInLayout"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_preferred_are"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/eg_block_7"
+                    android:id="@+id/Prefer_Area"
+                    />
+            </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Submit_Preference"
+                    android:text="@string/submit2"
+                    android:background="@drawable/round4"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/LayoutCustomize3"
+                    android:layout_marginStart="150dp"
+                    />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

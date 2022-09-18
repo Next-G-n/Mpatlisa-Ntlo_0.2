@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="3dp"
+app:cardElevation="3dp"
+app:cardBackgroundColor="@android:color/white"
+    android:id="@+id/postLayerView"
+    android:layout_marginStart="5dp"
+app:cardUseCompatPadding="true"
+app:contentPadding="5dp">
+<RelativeLayout
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/postLayerView2">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="25dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:cardElevation="10dp">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/pImageIV"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+        android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_marginStart="15dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/tagprice"/>
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/_7k"
+                android:textColor="@android:color/black"
+                android:id="@+id/pricetag"
+                />
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="105dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/uPictureIV2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pLocation"
+            android:text="@string/location"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F0F0"/>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/backButton"
+        android:title="@string/back"
+        android:icon="@drawable/ic_back_button"/>
+    <item
+        android:id="@+id/pageLabel"
+        android:title="@string/pagename" />
+    <item
+        android:id="@+id/user_icon"
+        android:title="@string/icon" />
+</menu>
